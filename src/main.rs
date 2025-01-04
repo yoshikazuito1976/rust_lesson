@@ -2,25 +2,21 @@
 
 
 fn main() {
-    let x=30;
+    let x = 1;
+    match x{
+        0 => println!("Zero!"),
+        1 => {
+            println!("One!");
+            println!("One!");
+        },
+        _ => println!("Other!"),
+    };
 
-    if x > 0 {
-        println!("OK");
+    let y = match x {
+        0 => 0,
+        1 => 10,
+        _ => 100
+    };
 
-    }
-
-    if x > 0 && x< 10{
-        println!("0 < x and x<10");
-    }
-    if x > 0 || x < 10{
-        println!("0 < x or x < 10");
-        }
-    if x > 0 && x <= 10 {
-        println!("first condition");
-
-    } else if x > 11 && x <= 20{
-        println!("second condition");
-    } else{
-        println!("else");
-    }
+    println!("{}",y);
 }
