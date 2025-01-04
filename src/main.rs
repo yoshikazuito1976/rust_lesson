@@ -2,21 +2,35 @@
 
 
 fn main() {
-    let x = 1;
-    match x{
-        0 => println!("Zero!"),
-        1 => {
-            println!("One!");
-            println!("One!");
-        },
-        _ => println!("Other!"),
+    // loop
+    // let mut cnt = 0;
+    // loop {
+    //     println!("Hello");
+    //     if cnt == 10{
+    //         break;
+    //     }
+    //     cnt += 1;
+    // }
+
+
+    // while
+    // let mut cnt = 0;
+    // while cnt <= 10{
+    //     println!("Hello");
+    //     cnt += 1;
+    // };
+
+    // for
+    for i in [1,2,3]{
+        println!("Hello, {}", i);
     };
 
-    let y = match x {
-        0 => 0,
-        1 => 10,
-        _ => 100
-    };
+    let r =1..=10;
+    for x in r {
+        println!("{}",x);
+        println!("{}",x*x);
+    }
 
-    println!("{}",y);
+
+
 }
